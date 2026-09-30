@@ -1,0 +1,14 @@
+package com.daydreamer.wecatch;
+
+import java.net.Proxy;
+
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class og3 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[Proxy.Type.values().length];
+        a = iArr;
+        iArr[Proxy.Type.DIRECT.ordinal()] = 1;
+    }
+}

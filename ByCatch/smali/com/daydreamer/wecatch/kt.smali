@@ -1,0 +1,9 @@
+###### Class com.daydreamer.wecatch.kt (com.daydreamer.wecatch.kt)
+.class public interface abstract Lcom/daydreamer/wecatch/kt;
+.super Ljava/lang/Object;
+.source "Model.java"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Object;)Z
+.end method

@@ -1,0 +1,75 @@
+###### Class androidx.media.AudioAttributesImplApi26Parcelizer (androidx.media.AudioAttributesImplApi26Parcelizer)
+.class public Landroidx/media/AudioAttributesImplApi26Parcelizer;
+.super Ljava/lang/Object;
+.source "AudioAttributesImplApi26Parcelizer.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static read(Lcom/daydreamer/wecatch/rn;)Landroidx/media/AudioAttributesImplApi26;
+    .registers 4
+
+    .line 1
+    new-instance v0, Landroidx/media/AudioAttributesImplApi26;
+
+    invoke-direct {v0}, Landroidx/media/AudioAttributesImplApi26;-><init>()V
+
+    .line 2
+    iget-object v1, v0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {p0, v1, v2}, Lcom/daydreamer/wecatch/rn;->r(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/media/AudioAttributes;
+
+    iput-object v1, v0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+
+    .line 3
+    iget v1, v0, Landroidx/media/AudioAttributesImplApi21;->b:I
+
+    const/4 v2, 0x2
+
+    invoke-virtual {p0, v1, v2}, Lcom/daydreamer/wecatch/rn;->p(II)I
+
+    move-result p0
+
+    iput p0, v0, Landroidx/media/AudioAttributesImplApi21;->b:I
+
+    return-object v0
+.end method
+
+.method public static write(Landroidx/media/AudioAttributesImplApi26;Lcom/daydreamer/wecatch/rn;)V
+    .registers 4
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p1, v0, v0}, Lcom/daydreamer/wecatch/rn;->x(ZZ)V
+
+    .line 2
+    iget-object v0, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p1, v0, v1}, Lcom/daydreamer/wecatch/rn;->H(Landroid/os/Parcelable;I)V
+
+    .line 3
+    iget p0, p0, Landroidx/media/AudioAttributesImplApi21;->b:I
+
+    const/4 v0, 0x2
+
+    invoke-virtual {p1, p0, v0}, Lcom/daydreamer/wecatch/rn;->F(II)V
+
+    return-void
+.end method

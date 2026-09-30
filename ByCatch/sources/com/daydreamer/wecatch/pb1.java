@@ -1,0 +1,9 @@
+package com.daydreamer.wecatch;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-measurement-base@@21.0.0 */
+/* JADX INFO: loaded from: classes.dex */
+public final class pb1 extends qb1 {
+    public pb1(String str) {
+        super("Protocol message tag had invalid wire type.");
+    }
+}

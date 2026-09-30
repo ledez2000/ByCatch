@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="com_parse_ui_password_too_short_toast">
+        <item quantity="one">Senha deve conter pelo menos %d caracter</item>
+        <item quantity="other">Senha deve conter pelo menos %d caracteres</item>
+    </plurals>
+</resources>

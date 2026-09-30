@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="com_parse_ui_password_too_short_toast">
+        <item quantity="one">密碼至少%d個字</item>
+        <item quantity="other">密碼至少%d個字</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 則新通知</item>
+        <item quantity="other">%d 則新通知</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+###### Class com.daydreamer.wecatch.rl2 (com.daydreamer.wecatch.rl2)
+.class public interface abstract Lcom/daydreamer/wecatch/rl2;
+.super Ljava/lang/Object;
+.source "InstanceCreator.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/reflect/Type;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/reflect/Type;",
+            ")TT;"
+        }
+    .end annotation
+.end method

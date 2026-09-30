@@ -1,0 +1,18 @@
+###### Class com.parse.ParseFieldOperation (com.parse.ParseFieldOperation)
+.class public interface abstract Lcom/parse/ParseFieldOperation;
+.super Ljava/lang/Object;
+.source "ParseFieldOperation.java"
+
+
+# virtual methods
+.method public abstract apply(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+.end method
+
+.method public abstract encode(Lcom/parse/ParseEncoder;)Ljava/lang/Object;
+.end method
+
+.method public abstract encode(Landroid/os/Parcel;Lcom/parse/ParseParcelEncoder;)V
+.end method
+
+.method public abstract mergeWithPrevious(Lcom/parse/ParseFieldOperation;)Lcom/parse/ParseFieldOperation;
+.end method

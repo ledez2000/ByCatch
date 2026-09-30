@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="com_parse_ui_password_too_short_toast">
+        <item quantity="one">密碼至少%d個字</item>
+        <item quantity="other">密碼至少%d個字</item>
+    </plurals>
+</resources>

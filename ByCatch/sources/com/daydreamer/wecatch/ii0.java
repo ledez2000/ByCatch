@@ -1,0 +1,88 @@
+package com.daydreamer.wecatch;
+
+import android.text.TextUtils;
+import com.daydreamer.wecatch.ii0;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-analytics-impl@@17.0.1 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class ii0<T extends ii0> {
+    public static String zza(Object obj) {
+        return zzd(obj, 0);
+    }
+
+    public static String zzb(Map map) {
+        return zzd(map, 1);
+    }
+
+    public static String zzd(Object obj, int i) {
+        if (i > 10) {
+            return "ERROR: Recursive toString calls";
+        }
+        if (obj == null) {
+            return "";
+        }
+        if (obj instanceof String) {
+            return TextUtils.isEmpty((String) obj) ? "" : obj.toString();
+        }
+        if (obj instanceof Integer) {
+            return ((Integer) obj).intValue() == 0 ? "" : obj.toString();
+        }
+        if (obj instanceof Long) {
+            return ((Long) obj).longValue() == 0 ? "" : obj.toString();
+        }
+        if (obj instanceof Double) {
+            return ((Double) obj).doubleValue() == 0.0d ? "" : obj.toString();
+        }
+        if (obj instanceof Boolean) {
+            return !((Boolean) obj).booleanValue() ? "" : obj.toString();
+        }
+        if (obj instanceof List) {
+            StringBuilder sb = new StringBuilder();
+            if (i > 0) {
+                sb.append("[");
+            }
+            int length = sb.length();
+            for (Object obj2 : (List) obj) {
+                if (sb.length() > length) {
+                    sb.append(", ");
+                }
+                sb.append(zzd(obj2, i + 1));
+            }
+            if (i > 0) {
+                sb.append("]");
+            }
+            return sb.toString();
+        }
+        if (!(obj instanceof Map)) {
+            return obj.toString();
+        }
+        StringBuilder sb2 = new StringBuilder();
+        boolean z = false;
+        int length2 = 0;
+        for (Map.Entry entry : new TreeMap((Map) obj).entrySet()) {
+            String strZzd = zzd(entry.getValue(), i + 1);
+            if (!TextUtils.isEmpty(strZzd)) {
+                if (i > 0 && !z) {
+                    sb2.append("{");
+                    length2 = sb2.length();
+                    z = true;
+                }
+                if (sb2.length() > length2) {
+                    sb2.append(", ");
+                }
+                sb2.append((String) entry.getKey());
+                sb2.append('=');
+                sb2.append(strZzd);
+            }
+        }
+        if (z) {
+            sb2.append("}");
+        }
+        return sb2.toString();
+    }
+
+    public abstract void zzc(T t);
+}

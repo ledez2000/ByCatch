@@ -1,0 +1,37 @@
+###### Class com.daydreamer.wecatch.z33 (com.daydreamer.wecatch.z33)
+.class public Lcom/daydreamer/wecatch/z33;
+.super Lcom/daydreamer/wecatch/x33;
+
+
+# direct methods
+.method public constructor <init>(Lcom/daydreamer/wecatch/x33$b;)V
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/daydreamer/wecatch/x33;-><init>(Lcom/daydreamer/wecatch/x33$b;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public varargs d([Ljava/lang/Object;)Ljava/lang/String;
+    .registers 3
+
+    iget-object p1, p0, Lcom/daydreamer/wecatch/x33;->b:Lcom/daydreamer/wecatch/x33$b;
+
+    const/4 v0, 0x0
+
+    invoke-interface {p1, v0}, Lcom/daydreamer/wecatch/x33$b;->b(Lorg/json/JSONObject;)V
+
+    return-object v0
+.end method
+
+.method public synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    invoke-virtual {p0, p1}, Lcom/daydreamer/wecatch/z33;->d([Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method

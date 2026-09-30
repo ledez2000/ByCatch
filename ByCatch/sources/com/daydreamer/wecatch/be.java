@@ -1,0 +1,13 @@
+package com.daydreamer.wecatch;
+
+import android.view.View;
+
+/* JADX INFO: compiled from: ViewPropertyAnimatorListener.java */
+/* JADX INFO: loaded from: classes.dex */
+public interface be {
+    void a(View view);
+
+    void b(View view);
+
+    void c(View view);
+}

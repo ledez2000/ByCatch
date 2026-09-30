@@ -1,0 +1,14 @@
+package com.daydreamer.wecatch;
+
+/* JADX INFO: compiled from: LoggingBehavior.kt */
+/* JADX INFO: loaded from: classes.dex */
+public enum l20 {
+    REQUESTS,
+    INCLUDE_ACCESS_TOKENS,
+    INCLUDE_RAW_RESPONSES,
+    CACHE,
+    APP_EVENTS,
+    DEVELOPER_ERRORS,
+    GRAPH_API_DEBUG_WARNING,
+    GRAPH_API_DEBUG_INFO
+}

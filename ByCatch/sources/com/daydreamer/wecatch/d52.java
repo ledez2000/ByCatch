@@ -1,0 +1,24 @@
+package com.daydreamer.wecatch;
+
+import android.os.Build;
+import java.util.Locale;
+
+/* JADX INFO: compiled from: ManufacturerUtils.java */
+/* JADX INFO: loaded from: classes.dex */
+public class d52 {
+    public static boolean a() {
+        return b() || d();
+    }
+
+    public static boolean b() {
+        return Build.MANUFACTURER.toLowerCase(Locale.ENGLISH).equals("lge");
+    }
+
+    public static boolean c() {
+        return Build.MANUFACTURER.toLowerCase(Locale.ENGLISH).equals("meizu");
+    }
+
+    public static boolean d() {
+        return Build.MANUFACTURER.toLowerCase(Locale.ENGLISH).equals("samsung");
+    }
+}

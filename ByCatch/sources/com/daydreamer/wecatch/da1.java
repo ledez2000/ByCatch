@@ -1,0 +1,9 @@
+package com.daydreamer.wecatch;
+
+import java.util.Iterator;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-measurement-base@@21.0.0 */
+/* JADX INFO: loaded from: classes.dex */
+public interface da1 extends Iterator {
+    byte zza();
+}
